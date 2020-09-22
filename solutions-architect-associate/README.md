@@ -1,7 +1,95 @@
 # AWS Certified Solutions Architect Associate SAA-C02
 
-## The Exam Blueprint
-## Identity and Access Management
+## What is the exam focusing on
+- 30% Design Resilient Architecture
+- 28% Design Performant Architectures
+- 24% Design Secure Applications and Architectures 
+- 18% Design Cost-Optimized Architectures
+
+## Exam tips
+- Understand differences between fault tolerant and high availability
+- Assume that an answer using a single AZ is always incorrect.
+- Managed services are preferred.
+- For unstructured data S3 is a good solution.
+- Look for caching options to improve performance.
+- Know when to use auto scaling for a given architecture.
+- Select the best instance size for a given workload.
+
+## Exam Blueprint
+
+### Data Resilient Architectures
+- Design a multi-tier acrhitecture solution.
+- Design highly available and/or fault tolerant architectures.
+- Design decoupling mechanisms using AWS services.
+- Choose appropriate resilient storage.
+
+### Design High-Performing Architectures
+- Identify elastic and scalable compute solutions for a workload.
+- Select high-performing and scalable storage solutions for a workload.
+- Select high-performing network solutions for a workload.
+- Choose high-performing database solutions for a workload.
+
+### Design Secure Applications and Architecture
+- Design secure access to AWS resources.
+- Design secure application tiers.
+- Select appropriate data security options.
+
+### Design Cost-Optimized Architectures
+- Identify cost-effective storage solutions.
+- Identify cost-effective compute and database services.
+- Design cost-optimized network architectures.
+
+### Whitepapers
+- [Architecting for the Cloud: AWS Best Practices](https://s3.amazonaws.com/awsmedia/AWS_Cloud_Best_Practices.pdf)
+- [AWS Security Best Practice](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Best_Practices.pdf)
+- [Overview of Amazon Web Services](https://d0.awsstatic.com/whitepapers/aws-overview.pdf)
+- [AWS Storage Services Overview](https://d0.awsstatic.com/whitepapers/AWS%20Storage%20Services%20Whitepaper-v9.pdf)
+- [AWS Well Architected Framework](https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc)
+- [Overview of Security Processes](https://d1.awsstatic.com/whitepapers/aws-security-whitepaper.pdf)
+
+### Videos
+- [AWS Events Videos](https://www.youtube.com/channel/UCdoadna9HFHsxXWhafhNvKw)
+- [Another Day, Another Billion Packets](https://youtu.be/3qln2u1Vr2E)
+
+### Web pages
+- [AWS Architecture Center](https://aws.amazon.com/architecture/)
+
+### Key areas and services
+- Application Integration
+- Desktop & App Streaming
+- Management Tools
+- Analytics
+- Migration
+- Security, Identity & Compliance
+- Compute
+- Storage
+- Databases
+- Network & Content Delivery
+- AWS Global Infrastructure
+
+## AWS Overview
+
+- Availability Zone: Data Center (Could be one or many)
+- Region: Geographical area, consist of 2 or more AZ.
+- Edge location: Endpoints used for caching (CloudFront, CDN). There are more edge locations than regions (and AZ).
+
+## Identity Access Management (IAM)
+- Centralized control of your AWS account.
+- Shared access to your AWS account.
+- Granular permissions
+- Identity federation (Google, LDAP, Facebook ...)
+- Multifactor Authentication
+- Temporary access for user/devices and services.
+- Allows you to set up your own password rotation policy
+- Integrates with many different AWS services.
+- Supports PCI DSS Compliance
+
+### IAM Definition
+- Users: End user
+- Groups: A collection of users. Will inherit the group permissions.
+- Policies: JSON documents, called policy documents. Give permissions as to what a user/group/role is able to do.
+- Roles: You create roles and then assign them to AWS resources.
+
 ### AWS Directory Service [SAA-C02]
 ### IAM Policies [SAA-C02]
 ### AWS Resource Access Manager (RAM) [SAA-C02]
